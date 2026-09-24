@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Chris' LinkedIn Profile",
+    "href": "https://www.linkedin.com/in/chris-lawrence-99627554/",
+    "description": "LinkedIn profile for professional networking and career opportunities",
+    "isExternal": true
+  },
+  {
+    "label": "Source Code for this Next.js Profile Project",
+    "href": "https://github.com/chrosslaw/next-profile",
+    "description": "GitHub repository",
+    "isExternal": true
+  }
+]

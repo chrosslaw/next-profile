@@ -1,5 +1,6 @@
 import PdfViewerModal from "@/ui/PdfViewerModal";
 import YouTubeAudioPlayer from "@/ui/YouTubeAudioPlayer";
+import LinksModal from "@/ui/LinksModal";
 const playSwitchSound = () => {
   // The path is relative to the `public` directory
   const audio = new Audio("/switch.mp3");
@@ -21,6 +22,7 @@ export default function Buttons({ changeTheme }: { changeTheme: () => void }) {
         downloadName="Christopher_Lawrence_Resume.pdf"
       />
       <YouTubeAudioPlayer videoId="PP1HTYB2Rtg" />
+      <LinksModal buttonText="View Resource Links" title="Project Resources" />
     </div>
   );
 }
