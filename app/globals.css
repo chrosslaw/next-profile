@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,20 +17,31 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+/* main {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .light {
   --background: #ffffff;
   --foreground: #171717;
 }
-
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+} */
+@keyframes card-transition-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotateX(90deg) scale(0.5);
+    transform-origin: bottom center;
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotateX(0deg) scale(1);
+    transform-origin: bottom center;
+  }
 }
