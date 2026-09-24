@@ -14,7 +14,7 @@ export default function Buttons({ changeTheme }: { changeTheme: () => void }) {
           changeTheme();
           playSwitchSound();
         }}
-        className="absolute top-[42%] left-[3%] min-h-6 min-w-4 md:min-h-10 md:min-w-8 rounded-md hover:bg-blue-400 hover:opacity-[1%] cursor-pointer hover:!shadow-none hover:animate-pulse transition-all"
+        className="absolute top-[42%] left-[3%] min-h-6 min-w-4 md:min-h-10 md:min-w-8 rounded-md hover:bg-blue-100 hover:opacity-[1%] cursor-pointer hover:animate-pulse transition-all"
       ></button>
       <PdfViewerModal
         fileUrl="/resume.pdf"

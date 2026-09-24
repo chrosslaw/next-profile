@@ -28,7 +28,7 @@ export default function PdfViewerModal({
       <button
         type="button"
         onClick={() => setIsOpen(true)}
-        className="absolute top-[73%] left-[65%] min-h-6 min-w-4 md:min-h-8 md:min-w-6 rounded-md hover:bg-blue-400 hover:opacity-[3%] cursor-pointer animate-pulse transition-all"
+        className="absolute top-[73%] left-[65%] min-h-6 min-w-4 md:min-h-8 md:min-w-6 rounded-md hover:bg-blue-100 hover:opacity-[3%] cursor-pointer animate-pulse transition-all"
       ></button>
 
       {/* Screen Overlay Modal */}

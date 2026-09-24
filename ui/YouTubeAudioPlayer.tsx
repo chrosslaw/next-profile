@@ -88,7 +88,7 @@ export default function YouTubeAudioPlayer({
         type="button"
         onClick={togglePlayback}
         disabled={!isReady}
-        className="absolute top-[57%] left-[83%] min-h-6 min-w-4 md:min-h-10 md:min-w-8 rounded-md hover:bg-blue-400 hover:opacity-[5%] cursor-pointer hover:!shadow-none animate-pulse transition-all"
+        className="absolute top-[57%] left-[83%] min-h-6 min-w-4 md:min-h-10 md:min-w-8 rounded-md hover:bg-blue-100 hover:opacity-[5%] cursor-pointer hover:!shadow-none animate-pulse transition-all"
       >
         {isPlaying ? "Pause" : ""}{" "}
       </button>
