@@ -11,7 +11,7 @@ declare global {
 }
 
 interface YouTubeAudioPlayerProps {
-  videoId: string; // The 11-character YouTube video ID (e.g. "jfKfPfyJRdk")
+  videoId: string;
 }
 
 export default function YouTubeAudioPlayer({
@@ -89,13 +89,10 @@ export default function YouTubeAudioPlayer({
         onClick={togglePlayback}
         disabled={!isReady}
         className="absolute top-[57%] left-[83%] min-h-6 min-w-4 md:min-h-10 md:min-w-8 rounded-md hover:bg-blue-400 hover:opacity-[5%] cursor-pointer hover:!shadow-none animate-pulse transition-all"
-      ></button>
+      >
+        {isPlaying ? "Pause" : ""}{" "}
+      </button>
 
-      {/*
-        Container element for the YouTube iframe.
-        Do NOT use 'display: none' or the iframe won't initialize or execute playback.
-        Instead, set size to 1px with absolute positioning or opacity 0.
-      */}
       <div
         id="youtube-hidden-player"
         className="absolute -left-[9999px] top-0 pointer-events-none opacity-0"
