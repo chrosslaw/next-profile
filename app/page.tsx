@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <main className={`flex flex-col p-4 h-screen ${theme}`}>
+    <main className={`flex flex-col p-4 min-h-screen ${theme}`}>
       <Header />
       <div className="relative w-full max-w-7xl aspect-16/9 self-center">
         <Image
