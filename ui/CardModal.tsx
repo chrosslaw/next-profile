@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, Avatar, Typography } from "@mui/material";
 import cardInfo from "@/app/cardInfo.json";
+
 type CardModalProps = {
   open: boolean;
   setOpen: (open: boolean) => void;
@@ -12,6 +13,7 @@ const playSwipeSound = () => {
 };
 
 export default function CardModal({ open, setOpen }: CardModalProps) {
+  const cardWobble = "hover:animate-pulse";
   return (
     <Box
       sx={{
@@ -20,7 +22,7 @@ export default function CardModal({ open, setOpen }: CardModalProps) {
         perspective: "1200px",
         pointerEvents: "none",
       }}
-      className={`${open ? "backdrop-blur-sm" : ""}`}
+      className={`${open ? "backdrop-blur-sm" : cardWobble} transition-all duration-700`}
     >
       <Card
         onClick={() => (setOpen(!open), playSwipeSound())}
