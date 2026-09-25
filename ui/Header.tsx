@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Header() {
   return (
-    <header className="flex place-content-center ">
+    <header className="flex place-content-center p-2">
       <div className="flex flex-col md:flex-row md:p-4 max-w-6xl w-full rounded-md place-items-center ">
         <Image
           src={"/Logo.svg"}

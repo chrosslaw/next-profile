@@ -19,11 +19,11 @@ export default function Home() {
   };
 
   return (
-    <main className={`flex flex-col md:p-4 min-w-full min-h-screen ${theme}`}>
+    <main className={`flex flex-col md:p-4  min-h-screen ${theme}`}>
       <Header />
-      <div className="relative min-w-full max-w-7xl aspect-16/9 self-center">
+      <div className="relative w-full max-w-7xl aspect-16/9 self-center">
         <Image
-          className="w-full md:border-2 md:border-blue-400 md:rounded-2xl"
+          className="w-full md:border-2 md:border-blue-400 max-w-7xl md:rounded-2xl"
           src={`/Office${background}.png`}
           alt="Office Image"
           fill={true}
