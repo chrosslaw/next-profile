@@ -20,7 +20,10 @@ export default function YouTubeAudioPlayer({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReady, setIsReady] = useState(false);
   const playerRef = useRef<any>(null);
-
+  const playerClasses =
+    "absolute aspect-video rounded-lg overflow-hidden shadow-2xl z-30 transition-all duration-500 pointer-events-none " +
+    "left-[0%] top-[101%] w-full max-w-7xl " +
+    "md:left-[50%] md:top-[11%] md:w-[24%] md:p-0 md:max-w-none";
   useEffect(() => {
     // 1. Load the IFrame Player API script asynchronously if not already present
     if (!window.YT) {
@@ -33,14 +36,16 @@ export default function YouTubeAudioPlayer({
     // 2. Initialize the player when the script triggers the global ready hook
     const initPlayer = () => {
       playerRef.current = new window.YT.Player("youtube-hidden-player", {
-        height: "1",
-        width: "1",
+        height: "100%",
+        width: "100%",
         videoId: videoId,
         playerVars: {
           autoplay: 0,
           controls: 0,
           disablekb: 1,
           fs: 0,
+          rel: 0,
+          iv_load_policy: 3,
           playsinline: 1,
         },
         events: {
@@ -94,10 +99,11 @@ export default function YouTubeAudioPlayer({
       </button>
 
       <div
-        id="youtube-hidden-player"
-        className="absolute -left-[9999px] top-0 pointer-events-none opacity-0"
-        aria-hidden="true"
-      />
+        className={`${playerClasses} ${isPlaying ? "opacity-100" : "opacity-0"}`}
+        aria-hidden={!isPlaying}
+      >
+        <div id="youtube-hidden-player" className="w-full h-full" />
+      </div>
     </div>
   );
 }
