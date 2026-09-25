@@ -10,11 +10,11 @@ export default function Header() {
           height={150}
           className="rounded-md "
         />
-        <div className="flex flex-col place-content-start gap-2 w-full px-2">
-          <h1 className="text-3xl sm:4xl lg:text-5xl font-bold italic place-self-start px-2 text-white">
+        <div className="flex flex-col place-items-center sm:place-content-start gap-2 w-full px-2">
+          <h1 className="text-3xl sm:4xl lg:text-5xl font-bold italic md:place-self-start px-2 text-white">
             Welcome to Chris' Office.
           </h1>
-          <h2 className="flex text-2xl sm:3xl lg:text-3xl font-bold italic self-end text-white">
+          <h2 className="flex text-2xl sm:3xl lg:text-4xl font-bold italic md:self-end text-white">
             Feel free to look around.
           </h2>
         </div>
