@@ -10,5 +10,11 @@
     "href": "https://github.com/chrosslaw/next-profile",
     "description": "GitHub repository",
     "isExternal": true
+  },
+  {
+    "label": "How about some jokes or a meme?",
+    "href": "https://jokes.chrosstech.com",
+    "description": "API fun",
+    "isExternal": true
   }
 ]
