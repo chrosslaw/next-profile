@@ -22,7 +22,7 @@ export default function Buttons({ changeTheme }: { changeTheme: () => void }) {
         downloadName="Christopher_Lawrence_Resume.pdf"
       />
       <YouTubeAudioPlayer videoId="PP1HTYB2Rtg" />
-      <LinksModal buttonText="View Resource Links" title="Project Resources" />
+      <LinksModal buttonText="Author-Related Links" title="Author Links" />
     </div>
   );
 }
