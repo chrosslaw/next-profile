@@ -69,8 +69,7 @@ export default function Home() {
           priority
         />
 
-        {/* Ensure buttons sit above background layers */}
-        <div className="relative z-10 w-full h-full">
+        <div className="relative w-full h-full">
           <Buttons changeTheme={changeTheme} />
         </div>
 
